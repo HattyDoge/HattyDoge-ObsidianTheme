@@ -1,170 +1,189 @@
-/* Sovrascrivi le variabili di base di Obsidian */
+/* ==========================================
+   CONFIGURAZIONE DI BASE & VARIABILI GLOBALI
+   ========================================== */
 body {
   --font-interface: 'Inter', sans-serif;
-  --accent-h: 210; /* Tonalità colore di accento (HSL) */
+  /* Imposta il font personalizzato per i titoli */
+  --font-header: 'Nimbus Sans Narrow', sans-serif;
+
+  --accent-h: 210;
   --accent-s: 70%;
   --accent-l: 50%;
+  --file-line-width: 1100px;
+  /* Larghezza massima pagina */
 }
 
-/* Modifica i colori per la modalità scura */
+/* ==========================================
+   TEMI (Dark e Light)
+   ========================================== */
+
+/* --- Modalità Scura --- */
 .theme-dark {
+  /* Sfondi e testo */
   --background-primary: #1e1e2e;
-  --background-secondary: #080827;
+  --background-secondary: #181825;
+  --background-primary-alt: #313244;
+  --background-secondary-alt: #45475a;
   --text-normal: #cdd6f4;
+
+  /* Titoli (H1 - H6) */
+  --h1-color: #f14444;
+  /* Rosso/Rosa */
+  --h2-color: #5584ce;
+  /* Blu */
+  --h3-color: #69dd5e;
+  /* Verde */
+  --h4-color: #df8045;
+  /* Arancione */
+  --h5-color: #a86bf3;
+  /* Viola */
+  --h6-color: #6ef0da;
+  /* Turchese */
+
+  /* Elementi di testo specializzati */
+  --bold-color: #f7eb4e;
+  /* Grassetto leggermente chiaro/dorato */
+  --italic-color: #40a02b;
+  /* Corsivo */
+
+  /* Link e Interattività */
+  --link-color: #89dceb;
+  --link-color-hover: #b4befe;
+  --link-decoration: none;
+  --link-decoration-hover: underline;
+  --link-external-color: #89dceb;
+  --link-external-color-hover: #b4befe;
+  --link-external-decoration: none;
+  --link-external-decoration-hover: underline;
+
+  /* Codice, Tabelle e Checkbox */
+  --code-background: #11111b;
+  --code-normal: #49e9ce;
+  --code-size: 0.9em;
+  --checkbox-border-color: #6c7086;
+  --checkbox-color: #89b4fa;
+  --checkbox-marker-color: var(--background-primary);
+  --divider-color: var(--background-secondary-alt);
+
+  /**/
 }
 
-/* Modifica i colori per la modalità chiara */
+/* --- Modalità Chiara --- */
 .theme-light {
-  --background-primary: #ffffff;
-  --background-secondary: #f0f0f0;
+  /* Sfondi e testo */
+  --background-primary: #eff1f5;
+  --background-secondary: #e6e9ef;
+  --background-primary-alt: #ccd0da;
+  --background-secondary-alt: #bcc0cc;
   --text-normal: #4c4f69;
+
+  /* Titoli (H1 - H6) - Tonalità scure coordinata per contrasto */
+  --h1-color: #d20f39;
+  /* Rosso */
+  --h2-color: #1e66f5;
+  /* Blu */
+  --h3-color: #40a02b;
+  /* Verde */
+  --h4-color: #fe640b;
+  /* Arancione */
+  --h5-color: #8839ef;
+  /* Viola */
+  --h6-color: #179299;
+  /* Turchese */
+
+  /* Elementi di testo specializzati */
+  --bold-color: #7287fd;
+  /* Grassetto */
+  --italic-color: #40a02b;
+  /* Corsivo */
+
+  /* Link e Interattività */
+  --link-color: #04a5e5;
+  --link-color-hover: #1e66f5;
+  --link-decoration: none;
+  --link-decoration-hover: underline;
+  --link-external-color: #04a5e5;
+  --link-external-color-hover: #1e66f5;
+  --link-external-decoration: none;
+  --link-external-decoration-hover: underline;
+
+  /* Codice, Tabelle e Checkbox */
+  --code-background: #e6e9ef;
+  --code-normal: #179299;
+  --code-size: 0.9em;
+  --checkbox-border-color: #9ca0b0;
+  --checkbox-color: #1e66f5;
+  --checkbox-marker-color: var(--background-primary);
+  --divider-color: var(--background-secondary-alt);
 }
 
 /* ==========================================
-   SNIPPET: Personalizzazione Headings
+   STILI TITOLI (H1, H2, H3) - ALLINEAMENTO
    ========================================== */
 
-
-
-
-/*==========================================
-    PAGE WIDTH
-    Imposta la larghezza massima della pagina a 1100px per una migliore leggibilità. 
-    Puoi modificare il valore a tuo piacimento.
-  ========================================== */
-body {
-    --file-line-width: 1100px;
-}
-
-
-
-
-
-
-/*==========================================
-    HEADING STYLING
-    Personalizza lo stile dei titoli (H1, H2, H3, ecc.) in modalità lettura e anteprima live.
-  ========================================== */
-
-/* Reading mode */
-.markdown-rendered h1 {
-    text-align: center;
-}
-
-/* Live Preview */
-.cm-s-obsidian .cm-header-1 {
-    text-align: center !important;
-}
-
-/* Reading mode */
-.markdown-rendered h2 {
-    text-align: center;
-}
-
-/* Live Preview */
-.cm-s-obsidian .cm-header-2 {
-    text-align: center !important;
-}
-
-/* Reading mode */
-.markdown-rendered h3 {
-    text-align: center;
-}
-
-/* Live Preview */
-.cm-s-obsidian .cm-header-3 {
-    text-align: center !important;
-} 
-
-
-/* ===== READING MODE ===== */
-
-.markdown-rendered h1 {
-    color: #FF6347;
-}
-
-/* rosso */
-.markdown-rendered h2 {
-    color: #2690d6;
-}
-
-/* blu */
-.markdown-rendered h3 {
-    color: #2ecc71;
-}
-
-/* verde */
-.markdown-rendered h4 {
-    color: #f39c12;
-}
-
-/* arancione */
-.markdown-rendered h5 {
-    color: #613474;
-}
-
-/* viola */
-.markdown-rendered h6 {
-    color: #1abc9c;
-}
-
-/* turchese */
-
-
-/* ===== LIVE PREVIEW ===== */
-
-.cm-s-obsidian .cm-header-1 {
-    color: #e74c3c;
-
-}
-
-.cm-s-obsidian .cm-header-2 {
-    color: #3498db;
-
-}
-
-.cm-s-obsidian .cm-header-3 {
-    color: #2ecc71;
-
-}
-
-.cm-s-obsidian .cm-header-4 {
-    color: #f39c12;
-}
-
-.cm-s-obsidian .cm-header-5 {
-    color: #9b59b6;
-
-}
-
-.cm-s-obsidian .cm-header-6 {
-    color: #1abc9c;
-
+/* Allineamento al centro per H1, H2 e H3 sia in Reading Mode che in Live Preview */
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6),
+.cm-s-obsidian :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5) {
+  text-align: center !important;
 }
 
 /* ==========================================
-   SNIPPET: Personalizzazione Bold
+   APPLICAZIONE FONT AI TITOLI
    ========================================== */
 
-/* Reading */
-.markdown-rendered strong {
-    color: #15111a;
+/* Reading Mode */
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--font-header) !important;
 }
 
 /* Live Preview */
+.cm-s-obsidian :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6) {
+  font-family: var(--font-header) !important;
+}
+
+/* ==========================================
+   STILI PER GRASSETTO E CORSIVO
+   ========================================== */
+
+/* Grassetto (Strong) */
+.markdown-rendered strong,
 .cm-s-obsidian .cm-strong {
-    color: #5008ad !important;
+  color: var(--bold-color) !important;
+}
+
+/* Corsivo (Italic) */
+.markdown-rendered em,
+.cm-s-obsidian .cm-em {
+  color: var(--italic-color) !important;
 }
 
 /* ==========================================
-   SNIPPET: Personalizzazione Italic
+   STILI PER L'ESPORTAZIONE IN PDF
    ========================================== */
+@media print {
 
-/* Reading */
-.markdown-source-view.mod-cm6 .cm-em { color: #00ff73; }
+  /* Forza la stampa dello sfondo e dei colori originali */
+  body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
 
-/* Reading */
-.markdown-rendered em {
-    color: #00ff73;
+  /* Mantiene la larghezza della pagina configurata */
+  .markdown-rendered {
+    max-width: var(--file-line-width) !important;
+    margin: 0 auto !important;
+  }
+
+  /* Mantiene i font personalizzati dei titoli */
+  .markdown-rendered :is(h1, h2, h3, h4, h5, h6) {
+    font-family: var(--font-header) !important;
+  }
+
+  /* Se desideri esportare con i colori del TEMA SCURO, scommenta queste righe: */
+  /*
+  .print {
+    background-color: #1e1e2e !important;
+    color: #cdd6f4 !important;
+  }
+  */
 }
-

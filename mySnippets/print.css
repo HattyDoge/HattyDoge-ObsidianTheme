@@ -1,0 +1,40 @@
+/* ==========================================
+   FORZATURA STAMPA PDF SCURO NATIVO
+   ========================================== */
+
+/* 1. Inietta il tema scuro nel motore di stampa native/Chromium */
+@media print {
+  html, body, .print, .print-wrapper, .markdown-rendered {
+    background-color: #1e1e2e !important;
+    color: #cdd6f4 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  @page {
+    margin: 10mm;
+    background-color: #1e1e2e !important;
+  }
+
+  /* 2. Disattiva il blend mode bianco nativo dei Callout */
+  .markdown-rendered .callout {
+    --callout-blend-mode: normal !important;
+    background-color: #24253a !important;
+    border: 1px solid var(--callout-color, #89b4fa) !important;
+    border-left-width: 4px !important;
+  }
+
+  /* 3. Forza la resa di icone e titoli di tutti i callout (TLDR, Example, ecc.) */
+  .markdown-rendered .callout-title,
+  .markdown-rendered .callout-title-inner,
+  .markdown-rendered .callout-icon {
+    color: var(--callout-color, #89b4fa) !important;
+    opacity: 1 !important;
+  }
+    /* 4. Blocchi di codice e tabelle */
+  .markdown-rendered code, 
+  .markdown-rendered pre {
+    background-color: #11111b !important;
+    color: #94e2d5 !important;
+  }
+}

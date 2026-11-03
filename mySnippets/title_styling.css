@@ -8,27 +8,6 @@
     text-align: center !important;
 }
 
-/* Reading mode */
-.markdown-rendered h2 {
-    text-align: center;
-}
-
-/* Live Preview */
-.cm-s-obsidian .cm-header-2 {
-    text-align: center !important;
-}
-
-/* Reading mode */
-.markdown-rendered h3 {
-    text-align: center;
-}
-
-/* Live Preview */
-.cm-s-obsidian .cm-header-3 {
-    text-align: center !important;
-} 
-
-
 /* ===== READING MODE ===== */
 
 .markdown-rendered h1 {
