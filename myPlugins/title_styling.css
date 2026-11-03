@@ -1,0 +1,95 @@
+/* Reading mode */
+.markdown-rendered h1 {
+    text-align: center;
+}
+
+/* Live Preview */
+.cm-s-obsidian .cm-header-1 {
+    text-align: center !important;
+}
+
+/* Reading mode */
+.markdown-rendered h2 {
+    text-align: center;
+}
+
+/* Live Preview */
+.cm-s-obsidian .cm-header-2 {
+    text-align: center !important;
+}
+
+/* Reading mode */
+.markdown-rendered h3 {
+    text-align: center;
+}
+
+/* Live Preview */
+.cm-s-obsidian .cm-header-3 {
+    text-align: center !important;
+} 
+
+
+/* ===== READING MODE ===== */
+
+.markdown-rendered h1 {
+    color: #b83324;
+}
+
+/* rosso */
+.markdown-rendered h2 {
+    color: #2690d6;
+}
+
+/* blu */
+.markdown-rendered h3 {
+    color: #2ecc71;
+}
+
+/* verde */
+.markdown-rendered h4 {
+    color: #f39c12;
+}
+
+/* arancione */
+.markdown-rendered h5 {
+    color: #613474;
+}
+
+/* viola */
+.markdown-rendered h6 {
+    color: #1abc9c;
+}
+
+/* turchese */
+
+
+/* ===== LIVE PREVIEW ===== */
+
+.cm-s-obsidian .cm-header-1 {
+    color: #e74c3c;
+
+}
+
+.cm-s-obsidian .cm-header-2 {
+    color: #3498db;
+
+}
+
+.cm-s-obsidian .cm-header-3 {
+    color: #2ecc71;
+
+}
+
+.cm-s-obsidian .cm-header-4 {
+    color: #f39c12;
+}
+
+.cm-s-obsidian .cm-header-5 {
+    color: #9b59b6;
+
+}
+
+.cm-s-obsidian .cm-header-6 {
+    color: #1abc9c;
+
+}

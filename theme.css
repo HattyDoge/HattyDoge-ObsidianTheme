@@ -1,0 +1,170 @@
+/* Sovrascrivi le variabili di base di Obsidian */
+body {
+  --font-interface: 'Inter', sans-serif;
+  --accent-h: 210; /* Tonalità colore di accento (HSL) */
+  --accent-s: 70%;
+  --accent-l: 50%;
+}
+
+/* Modifica i colori per la modalità scura */
+.theme-dark {
+  --background-primary: #1e1e2e;
+  --background-secondary: #080827;
+  --text-normal: #cdd6f4;
+}
+
+/* Modifica i colori per la modalità chiara */
+.theme-light {
+  --background-primary: #ffffff;
+  --background-secondary: #f0f0f0;
+  --text-normal: #4c4f69;
+}
+
+/* ==========================================
+   SNIPPET: Personalizzazione Headings
+   ========================================== */
+
+
+
+
+/*==========================================
+    PAGE WIDTH
+    Imposta la larghezza massima della pagina a 1100px per una migliore leggibilità. 
+    Puoi modificare il valore a tuo piacimento.
+  ========================================== */
+body {
+    --file-line-width: 1100px;
+}
+
+
+
+
+
+
+/*==========================================
+    HEADING STYLING
+    Personalizza lo stile dei titoli (H1, H2, H3, ecc.) in modalità lettura e anteprima live.
+  ========================================== */
+
+/* Reading mode */
+.markdown-rendered h1 {
+    text-align: center;
+}
+
+/* Live Preview */
+.cm-s-obsidian .cm-header-1 {
+    text-align: center !important;
+}
+
+/* Reading mode */
+.markdown-rendered h2 {
+    text-align: center;
+}
+
+/* Live Preview */
+.cm-s-obsidian .cm-header-2 {
+    text-align: center !important;
+}
+
+/* Reading mode */
+.markdown-rendered h3 {
+    text-align: center;
+}
+
+/* Live Preview */
+.cm-s-obsidian .cm-header-3 {
+    text-align: center !important;
+} 
+
+
+/* ===== READING MODE ===== */
+
+.markdown-rendered h1 {
+    color: #FF6347;
+}
+
+/* rosso */
+.markdown-rendered h2 {
+    color: #2690d6;
+}
+
+/* blu */
+.markdown-rendered h3 {
+    color: #2ecc71;
+}
+
+/* verde */
+.markdown-rendered h4 {
+    color: #f39c12;
+}
+
+/* arancione */
+.markdown-rendered h5 {
+    color: #613474;
+}
+
+/* viola */
+.markdown-rendered h6 {
+    color: #1abc9c;
+}
+
+/* turchese */
+
+
+/* ===== LIVE PREVIEW ===== */
+
+.cm-s-obsidian .cm-header-1 {
+    color: #e74c3c;
+
+}
+
+.cm-s-obsidian .cm-header-2 {
+    color: #3498db;
+
+}
+
+.cm-s-obsidian .cm-header-3 {
+    color: #2ecc71;
+
+}
+
+.cm-s-obsidian .cm-header-4 {
+    color: #f39c12;
+}
+
+.cm-s-obsidian .cm-header-5 {
+    color: #9b59b6;
+
+}
+
+.cm-s-obsidian .cm-header-6 {
+    color: #1abc9c;
+
+}
+
+/* ==========================================
+   SNIPPET: Personalizzazione Bold
+   ========================================== */
+
+/* Reading */
+.markdown-rendered strong {
+    color: #15111a;
+}
+
+/* Live Preview */
+.cm-s-obsidian .cm-strong {
+    color: #5008ad !important;
+}
+
+/* ==========================================
+   SNIPPET: Personalizzazione Italic
+   ========================================== */
+
+/* Reading */
+.markdown-source-view.mod-cm6 .cm-em { color: #00ff73; }
+
+/* Reading */
+.markdown-rendered em {
+    color: #00ff73;
+}
+

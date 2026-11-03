@@ -1,0 +1,9 @@
+/* Reading */
+.markdown-rendered strong {
+    color: #15111a;
+}
+
+/* Live Preview */
+.cm-s-obsidian .cm-strong {
+    color: #5008ad !important;
+}
